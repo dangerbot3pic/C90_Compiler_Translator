@@ -1,0 +1,19 @@
+#!/bin/bash
+
+flag=$1
+infile=$2
+out=$3
+outfile=$4
+
+if [ $flag == "-S" ]
+then 
+    ./bin/compile <$2 >$4
+
+elif [ $flag == "--translate" ]
+then
+    ./bin/translate <$2 >$4
+
+else
+    echo "Unknown directive $flag"
+    echo
+fi

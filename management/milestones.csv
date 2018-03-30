@@ -1,0 +1,53 @@
+MilestoneID,             Dependencies, EstimatedEffort, Lead,  Completed, Description
+AO1,             ,,    ?,           , Come up with initial milestones for getting started
+AO2,,5,ps3416,Yes,Design a basic lexer
+AO3,AO1,8,ss5116,Yes,Design a parser for the lexer
+AO4,AO3,7,ss5116,Yes,Implement an AST to test the parser
+AO5,AO4,6,ps3416,Yes,Implement translate to test parser AST
+AO6,AO4,8,ss5116,Yes,Add more functionality to parser
+AO7,AO4,5,ps3416,Yes,Write parser and translator functions
+AO8,AO3,8,ss5116,Yes,Write methods to parse a body of C instructions
+AO9,AO8,8,ps3416,Yes,Implement parser support for new functions in AST
+AO10,AO9,7,ss5116,Yes,Implement translator for updated AST
+AO11,AO9,6,ps3416,Yes,Begin codegen for simple return function
+AO12,,7,ps3416,Yes,Implement a context for the compiler
+AO13,AO11,5,ps3416,Yes,Create control to find amount of space needed on stack
+AO14,,6,ps3416,Yes,Support for local variables
+AO15,AO14,6,ps3416,Yes,Extend Context to support local variables
+AO16,AO14,8,ps3416,Yes,Extend support for return types/ arithmetic statements to include local variables
+AO17,AO14,9,ss5116,Yes,"Support declarations (int x, int x = y etc.) and assignments (x = a etc.)"
+AO18,,10,ps3416,Yes,Support for arithmetic binary operations
+AO19,,9,ps3416,Yes,"Support for conditionals ie <, > == etc., as an extension of binary expression"
+AO20,AO19,9,ss5116,Yes,Add support for If and If-else statements
+AO21,AO20,6,ps3416,Yes,Extend Context to support declarations within if-else blocks that aren't allowed outside these
+AO22,AO19,10,ps3416,Yes,Support for logical operations such as || and && for multiple conditions on if/while condition
+AO23,AO20,6,ps3416,Yes,Extend stack checks to include declarations in if-else blocks and while loops
+AO24,,10,ss5116,Yes,Add support for multiple global variable declarations/ functions in a program
+AO25,A024,8,ss5116,Yes,Add support for function calls with empty arguments
+AO26,,8,ss5116,Yes,Add support for while loops
+AO27,AO25,6,ps3416,Yes,Add support for simple function with integer arguments
+AO28,AO27,8,ps3416,Yes,Support function calls with variable arguments
+AO29,,10,ps3416,Yes,Add support for global variables
+AO30,AO29,9,ss5116,Yes,Add support for declarations of global variables ie. int x = 5
+AO31,,5,ps3416,Yes,Add simple checks to throw errors on invalid function calls/ undeclared/ redeclared variables
+AO32,"AO29, AO30",5,ps3416,Yes,Extend support in arithmetic to use global variables
+AO33,A027,7,ps3416,Yes,Implement support for recursion
+AO34,AO20,8,ss5116,Yes,Add support for nested if-else blocks
+AO35,AO26,9,ss5116,Yes,Add support for nested while loops
+AO36,,10,ss5116,Yes,Add support for for loops
+AO37,AO36,10,ss5116,Yes,Add support for nested for loops
+AO38,AO28,7,ps3416,Yes,Add support for calling functions with more than four arguments
+AO39,,4,ps3416,Yes,"Support for using integers as pseudo boolean logic oepratores ie. 0 corresponds to false, anything else is true in expressions such as ""if(x)"""
+AO40,,7,ps3416,Yes,Support for unary operators
+AO41,,10,ps3416,Yes,Support for pointers
+AO42,AO41,6,ps3416,Yes,"Support for references ie. ""&x"" to be used mainly in conjunction with pointers"
+AO43,,10,ss5116,Yes,Support for arrays of integer size
+AO44,AO43,10,ss5116,Yes,Support for arrays of variable size found at runtime
+AO45,,4,ps3416,Yes,Create testbench
+AO46,,7,ss5116,Yes,"Generate test cases, test for edge cases that are valid C"
+AO47,AO46,7,ss5116,Yes,Test edge cases and ensure that compiler generates code for supproted C
+AO48,,4,ps3416,Yes,Create testbench for translator
+AO49,AO48,6,ss5116,Yes,Generate test cases and run translator
+AO50,"AO41, AO42",6,ps3416,No,"Add support for general pointers ie. double, triple etc. pointers"
+AO51,"AO43, AO44",9,ss5116,No,Add support for multi dimensional arrays
+AO52,,5,ps3416,No,"Support for binary operations such as shifts, not's etc."

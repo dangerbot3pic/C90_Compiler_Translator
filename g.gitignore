@@ -1,0 +1,4 @@
+git rm *
+git rm src/*.tab.*
+git rm src/*.yy.*
+git rm src/*.o
