@@ -5,7 +5,7 @@ EE2 Compiler Coursework completed during my Second Year of EIE at Imperial Colle
 
 Project completed by me, Padmanaba Srinivasan and my partner Sam Stratton (samstratton on Github)
 
-I say compiler, but in reality it's also a translator, able to convert C90 code into Python or compile into MIPS32 assembly.
+It's a compiler and a translator, able to convert C90 code into Python or compile into MIPS32 assembly. Need to use a separate linker to produce the binary (use LLVM not GNU ;) )
 
 Not all the C90 spec is met. The following was implemented:
 
@@ -19,10 +19,10 @@ Not all the C90 spec is met. The following was implemented:
 - Function calls
 - Recursion
 - More than four arguments in function calls
-- Simple pointers and references (ie. no double++ pointers)
-- Arrays (1D only)
+- Simple pointers and references (ie. no double++ pointers), may have bugs. Passed some rudimentary testing
+- Arrays (1D only), slightly buggy
 - Unary ops
-- Probably some more stuff I can't recall at the moment. 
+- Some more stuff I can't recall at the moment. 
 
 The code should be clear enough to follow, I have tried to comment as much as practically needed.
 
