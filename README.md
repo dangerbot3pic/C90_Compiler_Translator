@@ -3,7 +3,7 @@
 
 EE2 Compiler Coursework completed during my Second Year of EIE at Imperial College
 
-Project completed by me, Padmanaba Srinivasan and my partner Sam Stratton (samstratton on Github)
+Project completed by me and my partner samstratton for as coursework
 
 It's a compiler and a translator, able to convert C90 code into Python or compile into MIPS32 assembly. Need to use a separate linker to produce the binary (use LLVM not GNU ;) )
 
@@ -59,4 +59,4 @@ To type in input via the terminal use:
     or
     ./bin/translate
 
-Which takes in code via stdin and prints code to stdout.
+This takes in code via stdin and prints code to stdout
