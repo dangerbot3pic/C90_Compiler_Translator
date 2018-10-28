@@ -11,7 +11,7 @@ src/lexer.yy.cpp : src/lexer.flex src/parser.tab.hpp
 
 bin/c_compiler : src/compile.o src/parser.tab.o src/lexer.yy.o src/parser.tab.o
 	mkdir -p bin
-	g++ $(CPPFLAGS) -o bin/compile $^
+	clang++ $(CPPFLAGS) -o bin/compile $^ -o3
 	chmod u+x ./bin/c_compiler
 	make bin/c_translate
 	chmod u+x ./test_compiler.sh
@@ -20,7 +20,7 @@ bin/c_compiler : src/compile.o src/parser.tab.o src/lexer.yy.o src/parser.tab.o
 
 bin/c_translate : src/translate.o src/parser.tab.o src/lexer.yy.o src/parser.tab.o
 	mkdir -p bin
-	g++ $(CPPFLAGS) -o bin/translate $^
+	clang++ $(CPPFLAGS) -o bin/translate $^ -o3
 
 
 clean :
